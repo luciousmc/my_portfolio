@@ -1,0 +1,62 @@
+// COLORS 
+$primary: cyan;
+$primary-lt: lighten(cyan, 25%);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif, Arial;
+}
+html, body {
+  min-height: 100%;
+}
+body {
+  background: whitesmoke;
+}
+
+#main-container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "aside  main"
+  "aside  main"
+  "aside  main"
+}
+
+.header {
+  grid-area: header;
+  background: green;
+  width: 100vw;
+  height: 100vh;
+}
+
+.aside {
+  grid-area: aside;
+  background: yellow;
+}
+
+.main {
+  grid-area: main;
+  background: firebrick;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr 1fr 1fr;
+  grid-template-areas: "about" "projects" "skills";
+}
+
+.about {
+  grid-area: about;
+  background: lightblue;
+}
+
+.projects {
+  grid-area: projects;
+  background: lightgreen;
+}
+
+.skills {
+  grid-area: skills;
+  background: lightgrey;
+}

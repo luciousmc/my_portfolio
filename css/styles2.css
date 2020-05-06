@@ -1,0 +1,101 @@
+* {
+  font-family: 'Noto Sans';
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-container {
+  padding: 15px;
+}
+
+#menu-button {
+  position: relative;
+  width: 50px;
+  height: 6px;
+  background: white;
+}
+
+#menu-button:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 6px;
+  background: white;
+  top: 15px;
+}
+
+#menu-button:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 6px;
+  background: white;
+  top: 30px;
+}
+
+.nav-container {
+  background: #17a2b8;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.header-container {
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-container .title {
+  padding: 50% 0;
+}
+
+.header-container h1 {
+  font-size: 4rem;
+}
+
+.header-container p {
+  font-size: 1.5em;
+}
+
+.header-container span {
+  color: #17a2b8;
+}
+
+.main-container {
+  background: green;
+}
+
+.section-container {
+  min-height: 100vh;
+}
+
+#about {
+  background: lightblue;
+}
+
+#projects {
+  background: lightcoral;
+}
+
+#skills {
+  background: lightseagreen;
+}
+/*# sourceMappingURL=styles2.css.map */
