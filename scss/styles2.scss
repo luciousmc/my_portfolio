@@ -1,0 +1,38 @@
+@import "colors.scss";
+@import "globals.scss";
+@import "utilities.scss";
+
+
+.nav-container {
+  background: $primary;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+  
+
+.header-container {
+  height: 100vh;
+  background: purple;
+}
+
+.main-container {
+  background: green;
+}
+
+.section-container {
+  min-height: 100vh;
+}
+
+#about {
+  background: lightblue;
+}
+
+#projects {
+  background: lightcoral;
+}
+
+#skills {
+  background: lightseagreen;
+}

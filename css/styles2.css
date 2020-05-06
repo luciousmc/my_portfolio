@@ -61,15 +61,15 @@ html, body {
   min-height: 100vh;
 }
 
-.about {
+#about {
   background: lightblue;
 }
 
-.projects {
+#projects {
   background: lightcoral;
 }
 
-.skills {
+#skills {
   background: lightseagreen;
 }
 /*# sourceMappingURL=styles2.css.map */
