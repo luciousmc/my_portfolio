@@ -1,6 +1,8 @@
 * {
   font-family: 'Noto Sans';
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -19,7 +21,6 @@ h5 {
 
 hr {
   color: #ddd;
-  width: 75%;
   margin: auto;
 }
 
@@ -28,13 +29,14 @@ hr {
 }
 
 .btn-container {
+  width: 18%;
   padding: 15px;
 }
 
 #menu-button {
   position: relative;
-  width: 50px;
-  height: 6px;
+  width: 100%;
+  height: 4px;
   background: white;
 }
 
@@ -43,9 +45,9 @@ hr {
   position: absolute;
   content: '';
   width: 100%;
-  height: 6px;
+  height: 4px;
   background: white;
-  top: 15px;
+  top: 10px;
 }
 
 #menu-button:after {
@@ -53,9 +55,9 @@ hr {
   position: absolute;
   content: '';
   width: 100%;
-  height: 6px;
+  height: 4px;
   background: white;
-  top: 30px;
+  top: 20px;
 }
 
 .text-primary {
@@ -68,10 +70,38 @@ hr {
 
 .nav-container {
   background: #17a2b8;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   position: fixed;
   top: 0;
+}
+
+.nav-container menu {
+  margin-top: 10px;
+  height: 0;
+  overflow: hidden;
+}
+
+.nav-container menu.show-menu {
+  height: auto;
+}
+
+.nav-container .nav-ul {
+  text-align: center;
+  background: #17a2b8;
+  padding: 0 15px 20px 15px;
+  color: #093e47;
+  font-size: 1.2rem;
+}
+
+.nav-container .nav-ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-container .nav-ul li:hover {
+  color: #63d9ec;
 }
 
 .header-container {
@@ -98,13 +128,16 @@ hr {
 
 .section-container {
   min-height: 100vh;
+  padding: 15px;
 }
 
-#projects {
-  background: lightcoral;
+.section-container h2 {
+  text-align: center;
 }
 
-#skills {
-  background: lightseagreen;
+@media screen and (min-width: 500px) {
+  .section-container h2 {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=styles2.css.map */

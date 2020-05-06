@@ -5,10 +5,37 @@
 
 .nav-container {
   background: $primary;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   position: fixed;
   top: 0;
+
+    menu {
+      margin-top: 10px;
+      height: 0;
+      overflow: hidden;
+
+      &.show-menu {
+        height: auto;
+      }
+    }
+    .nav-ul {
+      text-align: center;
+      background: $primary;
+      padding: 0 15px 20px 15px;
+      color: $primary-dk;
+      font-size: 1.2rem;
+
+      li {
+        list-style-type: none;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &:hover {
+          color: $primary-lt;
+        }
+      }
+    }
 }
 
 .header-container {
@@ -31,11 +58,21 @@
 }
 
 .main-container {
-  // background: green;
+  // padding: 10px;
 }
 
 .section-container {
   min-height: 100vh;
+  padding: 15px;
+
+  h2 {
+    text-align: center;
+  }
+  @media screen and (min-width: 500px) {
+    h2 {
+      text-align: left;
+    }
+  }
 }
 
 #about {
@@ -43,9 +80,9 @@
 }
 
 #projects {
-  background: lightcoral;
+  // background: lightcoral;
 }
 
 #skills {
-  background: lightseagreen;
+  // background: lightseagreen;
 }
