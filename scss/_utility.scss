@@ -3,6 +3,10 @@ $bar-height: 4px;
 .btn-container {
   width: 18%;
   padding: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 #menu-button {
   position: relative;

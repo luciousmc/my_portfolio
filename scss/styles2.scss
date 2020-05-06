@@ -11,16 +11,18 @@
   top: 0;
 
     menu {
-      margin-top: 10px;
+      // margin-top: 20px;
       height: 0;
       overflow: hidden;
+      transition: .5s;
 
       &.show-menu {
-        height: auto;
+        height: 200px;
       }
     }
     .nav-ul {
-      text-align: center;
+      margin: 0;
+      // text-align: center;
       background: $primary;
       padding: 0 15px 20px 15px;
       color: $primary-dk;
@@ -57,10 +59,6 @@
   }
 }
 
-.main-container {
-  // padding: 10px;
-}
-
 .section-container {
   min-height: 100vh;
   padding: 15px;
@@ -73,16 +71,4 @@
       text-align: left;
     }
   }
-}
-
-#about {
-  // background: lightblue;
-}
-
-#projects {
-  // background: lightcoral;
-}
-
-#skills {
-  // background: lightseagreen;
 }
