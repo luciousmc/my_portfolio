@@ -12,14 +12,22 @@
     
     <nav class="nav-container">
       <div class="btn-container">
-        <div id="menu-button"></div>
+        <div id="menu-button" class="nav-toggle"></div>
       </div>
       <menu id="menu">
-        <ul class="nav-ul">
-          <li>About</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Download Resume</li>
+        <ul class="nav-ul nav-toggle">
+          <li>
+            <a href="#about" class="nav-toggle">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-toggle">Projects</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-toggle">Skills</a>
+          </li>
+          <li>
+            <a href="#" class="nav-toggle">Download Resume</a>
+          </li>
         </ul>
       </menu>
     </nav>
@@ -30,7 +38,9 @@
         <p><span>Full-Stack</span> Web Developer</p>
       </div>
     </header>
+
     <hr />
+    
     <main class="main-container">
       <section class="section-container" id="about">
         <div class="about-section">
@@ -65,11 +75,29 @@
           </p>
         </div>
       </section>
+      
       <hr />
+      
       <section class="section-container" id="projects">
         <div class="projects-section">
           <h2>Projects</h2>
 
+          <div class="project-item">
+            <h3 class="project-title">
+              Sheynanigans Bakery
+            </h3>
+            <span class="project-links">
+              <a href="https://sheynanigans.marlonclay.com">Live</a>
+               | 
+              <a href="https://github.com/luciousmc/sheynanigans-bakery">GitHub</a>
+            </span>
+            <div class="project-img">
+              <img src="" alt="Sheynanigans Bakery Preview Image">
+            </div>
+            <p class="project-description">
+              A Full-Stack React and Node.js shopping cart app
+            </p>
+          </div>
         </div>
       </section>
       <hr />

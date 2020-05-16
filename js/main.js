@@ -1,14 +1,19 @@
 // SHOW HIDE MENU ON MOBILE
-const menuButton = document.getElementById('menu-button');
+const navBar = document.querySelector('.nav-container');
 const menu = document.getElementById('menu');
-let showMenu = false;
 
-menuButton.addEventListener("click", function(event){
-  if (!showMenu){
-    menu.classList.add('show-menu');
-    showMenu = true;
-  } else {
-    menu.classList.remove('show-menu');
-    showMenu = false;
+navBar.addEventListener('click', function(event) {
+
+  if (event.target.attributes.class){
+    const { value } = event.target.attributes.class;
+
+    if (value === 'nav-toggle') {
+      if (menu.classList.contains('show-menu')) {
+        menu.classList.remove('show-menu');
+      } else {
+        menu.classList.add('show-menu');
+      }
+    }
   }
+
 });

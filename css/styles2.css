@@ -81,6 +81,7 @@ hr {
 }
 
 .nav-container menu {
+  background: #17a2b8;
   height: 0;
   overflow: hidden;
   -webkit-transition: .5s;
@@ -88,14 +89,13 @@ hr {
 }
 
 .nav-container menu.show-menu {
+  padding-top: 15px;
   height: 200px;
 }
 
 .nav-container .nav-ul {
   margin: 0;
-  background: #17a2b8;
   padding: 0 15px 20px 15px;
-  color: #093e47;
   font-size: 1.2rem;
 }
 
@@ -103,9 +103,15 @@ hr {
   list-style-type: none;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 7px 0;
 }
 
-.nav-container .nav-ul li:hover {
+.nav-container .nav-ul li a {
+  color: #093e47;
+  text-decoration: none;
+}
+
+.nav-container .nav-ul li a:hover {
   color: #63d9ec;
 }
 

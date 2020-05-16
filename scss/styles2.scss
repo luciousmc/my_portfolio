@@ -12,30 +12,36 @@
 
     menu {
       // margin-top: 20px;
+      background: $primary;
       height: 0;
       overflow: hidden;
       transition: .5s;
 
       &.show-menu {
+        padding-top: 15px;
         height: 200px;
       }
     }
     .nav-ul {
       margin: 0;
-      // text-align: center;
-      background: $primary;
       padding: 0 15px 20px 15px;
-      color: $primary-dk;
       font-size: 1.2rem;
 
       li {
         list-style-type: none;
         text-transform: uppercase;
         font-weight: 700;
+        padding: 7px 0;
 
-        &:hover {
-          color: $primary-lt;
+        a {
+          color: $primary-dk;
+          text-decoration: none;
+
+          &:hover {
+            color: $primary-lt;
+          }
         }
+
       }
     }
 }
