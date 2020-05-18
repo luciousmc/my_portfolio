@@ -176,7 +176,7 @@ hr {
 }
 
 .section-container .project-links a:hover {
-  color: #ddd;
+  color: black;
 }
 
 @media screen and (min-width: 500px) {
