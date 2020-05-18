@@ -140,10 +140,32 @@ hr {
 .section-container {
   min-height: 100vh;
   padding: 15px;
+  text-align: center;
 }
 
 .section-container h2 {
   text-align: center;
+}
+
+.section-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-container .project-links {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-container .project-links a {
+  color: #17a2b8;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.section-container .project-links a:hover {
+  color: #ddd;
 }
 
 @media screen and (min-width: 500px) {

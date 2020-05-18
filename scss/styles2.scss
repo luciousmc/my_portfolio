@@ -68,9 +68,28 @@
 .section-container {
   min-height: 100vh;
   padding: 15px;
+  text-align: center;
 
   h2 {
     text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .project-links {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .project-links a {
+    color: $primary;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $grey;
+    }
   }
   @media screen and (min-width: 500px) {
     h2 {
