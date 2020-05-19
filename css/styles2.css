@@ -72,6 +72,25 @@ hr {
   background: #343a40;
 }
 
+.skill-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logo-card {
+  width: 50%;
+  text-align: center;
+}
+
+.logo-card .logo-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .nav-container {
   background: #17a2b8;
   height: 8vh;
