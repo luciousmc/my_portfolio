@@ -1,0 +1,15 @@
+.skill-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo-card {
+  width: 50%;
+  text-align: center;
+
+  .logo-title {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+}
+

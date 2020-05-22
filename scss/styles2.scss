@@ -1,14 +1,50 @@
 @import "colors.scss";
 @import "globals.scss";
 @import "utility.scss";
+@import "svg.scss";
 
 
 .nav-container {
   background: $primary;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   position: fixed;
   top: 0;
+
+    menu {
+      // margin-top: 20px;
+      background: $primary;
+      height: 0;
+      overflow: hidden;
+      transition: .5s;
+
+      &.show-menu {
+        padding-top: 15px;
+        height: 200px;
+      }
+    }
+    .nav-ul {
+      margin: 0;
+      padding: 0 15px 20px 15px;
+      font-size: 1.2rem;
+
+      li {
+        list-style-type: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 7px 0;
+
+        a {
+          color: $primary-dk;
+          text-decoration: none;
+
+          &:hover {
+            color: $primary-lt;
+          }
+        }
+
+      }
+    }
 }
 
 .header-container {
@@ -30,22 +66,44 @@
   }
 }
 
-.main-container {
-  background: green;
-}
-
 .section-container {
   min-height: 100vh;
-}
+  padding: 15px;
 
-#about {
-  background: lightblue;
-}
+  &#projects {
+  text-align: center;
+  }
 
-#projects {
-  background: lightcoral;
-}
+  .project-item {
+    margin-bottom: 5rem;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .project-links {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .project-links a {
+    color: $primary;
+    text-decoration: none;
+    text-transform: uppercase;
 
-#skills {
-  background: lightseagreen;
+    &:hover {
+      color: black;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    h2 {
+      text-align: left;
+    }
+  }
 }
