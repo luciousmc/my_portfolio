@@ -43,3 +43,25 @@ $bar-height: 4px;
 .bg-dark {
   background: $dark;
 }
+
+// ICONS
+.social-container {
+  display: flex;
+  justify-content: center;
+
+  & a {
+    color: white;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    background-color: $dark;
+    border-radius: 100%;
+    line-height: 70px;
+    margin: 0 1rem;
+
+    &:hover {
+      background-color: whitesmoke;
+      color: $dark;
+    }
+  }
+}
