@@ -1,38 +1,41 @@
 $bar-height: 4px;
 
 .btn-container {
+  position: relative;
+  top: 15%;
+  left: 2%;
   width: 70px;
-  padding: 15px;
+  color: white;
 
   &:hover {
     cursor: pointer;
   }
 }
-#menu-button {
-  position: relative;
-  width: 100%;
-  height: $bar-height;
-  background: white;
+// #menu-button {
+//   position: relative;
+//   width: 100%;
+//   height: $bar-height;
+//   background: white;
 
-  &:before {
-    display: block;
-    position: absolute;
-    content:'';
-    width: 100%;
-    height: $bar-height;
-    background: white;
-    top: 10px;
-  }
-  &:after {
-    display: block;
-    position: absolute;
-    content:'';
-    width: 100%;
-    height: $bar-height;
-    background: white;
-    top: 20px;
-  }
-}
+//   &:before {
+//     display: block;
+//     position: absolute;
+//     content:'';
+//     width: 100%;
+//     height: $bar-height;
+//     background: white;
+//     top: 10px;
+//   }
+//   &:after {
+//     display: block;
+//     position: absolute;
+//     content:'';
+//     width: 100%;
+//     height: $bar-height;
+//     background: white;
+//     top: 20px;
+//   }
+// }
 
 // TEXT UTILITIES
 .text-primary {
