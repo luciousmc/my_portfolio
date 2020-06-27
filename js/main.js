@@ -11,20 +11,6 @@ navBar.addEventListener("click", function (event) {
       menu.classList.add("show-menu");
     }
   }
-
-  // if (event.target.attributes.class) {
-  //   const { value } = event.target.attributes.class;
-
-  //   console.log(event);
-
-  //   if (value === "nav-toggle") {
-  //     if (menu.classList.contains("show-menu")) {
-  //       menu.classList.remove("show-menu");
-  //     } else {
-  //       menu.classList.add("show-menu");
-  //     }
-  //   }
-  // }
 });
 
 // SMOOTH SCROLLING
