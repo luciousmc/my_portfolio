@@ -29,6 +29,25 @@ hr {
   padding: 15px;
 }
 
+.skill-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logo-card {
+  width: 50%;
+  text-align: center;
+}
+
+.logo-card .logo-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .btn-container {
   position: relative;
   top: 15%;
@@ -78,35 +97,6 @@ hr {
 .social-container a:hover {
   background-color: whitesmoke;
   color: #343a40;
-}
-
-.skill-logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.logo-card {
-  width: 50%;
-  text-align: center;
-}
-
-.logo-card .logo-title {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-@media screen and (min-width: 600px) {
-  #wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3fr 7fr;
-        grid-template-columns: 3fr 7fr;
-        grid-template-areas: "header header" "nav main";
-  }
 }
 
 .nav-container {
@@ -189,6 +179,68 @@ hr {
 
 .header-container span {
   color: #17a2b8;
+}
+
+.main-container {
+  grid-area: main;
+}
+
+.section-container {
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.section-container#projects {
+  text-align: center;
+}
+
+.section-container .project-item {
+  margin-bottom: 5rem;
+}
+
+.section-container h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-container h3 {
+  margin-bottom: 0;
+}
+
+.section-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-container .project-links {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-container .project-links a {
+  color: #17a2b8;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.section-container .project-links a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 500px) {
+  .section-container h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 7fr;
+        grid-template-columns: 3fr 7fr;
+        grid-template-areas: "header header" "nav main";
+  }
 }
 
 .main-container {

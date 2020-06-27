@@ -1,0 +1,19 @@
+.header-container {
+  grid-area: header;
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+
+  .title {
+    padding: 50% 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  span {
+    color: $primary;
+  }
+}
