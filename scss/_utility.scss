@@ -10,6 +10,12 @@ $bar-height: 4px;
   &:hover {
     cursor: pointer;
   }
+
+  @media screen and (min-width: $break-mobile-size) {
+    & {
+      display: none;
+    }
+  }
 }
 
 // TEXT UTILITIES

@@ -3,13 +3,8 @@ const navBar = document.querySelector(".nav-container");
 const menu = document.getElementById("menu");
 
 navBar.addEventListener("click", function (event) {
-  console.log(event);
   if (event.target.classList.contains("nav-toggle")) {
-    if (menu.classList.contains("show-menu")) {
-      menu.classList.remove("show-menu");
-    } else {
-      menu.classList.add("show-menu");
-    }
+    menu.classList.toggle("show-menu");
   }
 });
 

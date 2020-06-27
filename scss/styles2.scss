@@ -3,7 +3,17 @@
 @import "utility.scss";
 @import "svg.scss";
 
-
+#wrapper {
+  @media screen and (min-width: $break-mobile-size) {
+    & {
+      display: grid;
+      grid-template-columns: 3fr 7fr;
+      grid-template-areas:
+        "header header"
+        "nav main";
+    }
+  }
+}
 .nav-container {
   background: $primary;
   height: 8vh;
@@ -11,43 +21,58 @@
   position: fixed;
   top: 0;
 
-    menu {
-      // margin-top: 20px;
-      background: $primary;
-      height: 0;
-      overflow: hidden;
-      transition: .5s;
+  @media screen and (min-width: $break-mobile-size) {
+    & {
+      grid-area: nav;
+      height: 100vh;
+      width: 35vw;
+      position: sticky;
+    }
+  }
 
-      &.show-menu {
-        padding-top: 15px;
-        height: 200px;
+  menu {
+    // margin-top: 20px;
+    background: $primary;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+    &.show-menu {
+      padding-top: 15px;
+      height: 200px;
+    }
+
+    @media screen and (min-width: $break-mobile-size) {
+      & {
+        height: auto;
       }
     }
-    .nav-ul {
-      margin: 0;
-      padding: 0 15px 20px 15px;
-      font-size: 1.2rem;
+  }
+  .nav-ul {
+    margin: 0;
+    padding: 0 15px 20px 15px;
+    font-size: 1.2rem;
 
-      li {
-        list-style-type: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 7px 0;
+    li {
+      list-style-type: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 7px 0;
 
-        a {
-          color: $primary-dk;
-          text-decoration: none;
+      a {
+        color: $primary-dk;
+        text-decoration: none;
 
-          &:hover {
-            color: $primary-lt;
-          }
+        &:hover {
+          color: $primary-lt;
         }
-
       }
     }
+  }
 }
 
 .header-container {
+  grid-area: header;
   height: 100vh;
   padding: 10px;
   text-align: center;
@@ -66,12 +91,16 @@
   }
 }
 
+.main-container {
+  grid-area: main;
+}
+
 .section-container {
   min-height: 100vh;
   padding: 15px;
 
   &#projects {
-  text-align: center;
+    text-align: center;
   }
 
   .project-item {

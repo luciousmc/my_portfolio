@@ -41,6 +41,12 @@ hr {
   cursor: pointer;
 }
 
+@media screen and (min-width: 600px) {
+  .btn-container {
+    display: none;
+  }
+}
+
 .text-primary {
   color: #17a2b8;
 }
@@ -93,6 +99,16 @@ hr {
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 600px) {
+  #wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 7fr;
+        grid-template-columns: 3fr 7fr;
+        grid-template-areas: "header header" "nav main";
+  }
+}
+
 .nav-container {
   background: #17a2b8;
   height: 8vh;
@@ -101,17 +117,33 @@ hr {
   top: 0;
 }
 
+@media screen and (min-width: 600px) {
+  .nav-container {
+    grid-area: nav;
+    height: 100vh;
+    width: 35vw;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
 .nav-container menu {
   background: #17a2b8;
   height: 0;
   overflow: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-container menu.show-menu {
   padding-top: 15px;
   height: 200px;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-container menu {
+    height: auto;
+  }
 }
 
 .nav-container .nav-ul {
@@ -137,6 +169,7 @@ hr {
 }
 
 .header-container {
+  grid-area: header;
   height: 100vh;
   padding: 10px;
   text-align: center;
@@ -156,6 +189,10 @@ hr {
 
 .header-container span {
   color: #17a2b8;
+}
+
+.main-container {
+  grid-area: main;
 }
 
 .section-container {
