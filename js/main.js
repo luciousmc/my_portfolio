@@ -26,10 +26,17 @@ menu.addEventListener("click", function (event) {
   event.preventDefault();
   const hash = event.target.hash;
   const scrollTarget = document.querySelector(hash);
-  const { top } = getScrollPos(scrollTarget);
+  const { top: scrollTop } = getScrollPos(scrollTarget);
+  let top;
+
+  if (window.getComputedStyle(navBar).display === "none") {
+    top = navBar.offsetHeight;
+  } else {
+    top = scrollTop - navBar.offsetHeight;
+  }
 
   window.scroll({
-    top: top - navBar.offsetHeight,
+    top,
     left: 0,
     behavior: "smooth",
   });

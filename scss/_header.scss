@@ -1,12 +1,11 @@
 .header-container {
   grid-area: header;
   height: 100vh;
-  padding: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  .title {
-    padding: 50% 0;
-  }
   h1 {
     font-size: 4rem;
   }

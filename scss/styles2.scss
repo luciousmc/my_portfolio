@@ -10,56 +10,10 @@
   @media screen and (min-width: $break-mobile-size) {
     & {
       display: grid;
-      grid-template-columns: 3fr 7fr;
+      grid-template-columns: 2fr 8fr;
       grid-template-areas:
         "header header"
         "nav main";
-    }
-  }
-}
-
-.main-container {
-  grid-area: main;
-}
-
-.section-container {
-  min-height: 100vh;
-  padding: 15px;
-
-  &#projects {
-    text-align: center;
-  }
-
-  .project-item {
-    margin-bottom: 5rem;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  h3 {
-    margin-bottom: 0;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .project-links {
-    display: block;
-    margin-bottom: 1rem;
-  }
-  .project-links a {
-    color: $primary;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-      color: black;
-    }
-  }
-  @media screen and (min-width: 500px) {
-    h2 {
-      text-align: left;
     }
   }
 }
