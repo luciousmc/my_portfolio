@@ -1,13 +1,18 @@
+// variables
+
+$break-mobile-size: 600px;
 
 * {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-//  height: 100%;
- background: whitesmoke;
+html,
+body {
+  //  height: 100%;
+  background: whitesmoke;
+  margin: 0;
 }
 
 h1,

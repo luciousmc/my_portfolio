@@ -1,0 +1,56 @@
+.nav-container {
+  background: $primary;
+  height: 8vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+
+  @media screen and (min-width: $break-mobile-size) {
+    & {
+      grid-area: nav;
+      height: 100vh;
+      max-width: 20vw;
+      position: sticky;
+    }
+  }
+
+  menu {
+    // margin-top: 20px;
+    background: $primary;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+    &.show-menu {
+      padding-top: 15px;
+      height: 200px;
+    }
+
+    @media screen and (min-width: $break-mobile-size) {
+      & {
+        height: auto;
+      }
+    }
+  }
+  .nav-ul {
+    margin: 0;
+    padding: 0 15px 20px 15px;
+    font-size: 1.2rem;
+
+    li {
+      list-style-type: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 7px 0;
+
+      a {
+        color: $primary-dk;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary-lt;
+        }
+      }
+    }
+  }
+}

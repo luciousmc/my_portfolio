@@ -1,12 +1,14 @@
 * {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background: whitesmoke;
+  margin: 0;
 }
 
 h1,
@@ -27,40 +29,41 @@ hr {
   padding: 15px;
 }
 
+.skill-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logo-card {
+  width: 50%;
+  text-align: center;
+}
+
+.logo-card .logo-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .btn-container {
+  position: relative;
+  top: 15%;
+  left: 2%;
   width: 70px;
-  padding: 15px;
+  color: white;
 }
 
 .btn-container:hover {
   cursor: pointer;
 }
 
-#menu-button {
-  position: relative;
-  width: 100%;
-  height: 4px;
-  background: white;
-}
-
-#menu-button:before {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: white;
-  top: 10px;
-}
-
-#menu-button:after {
-  display: block;
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: white;
-  top: 20px;
+@media screen and (min-width: 600px) {
+  .btn-container {
+    display: none;
+  }
 }
 
 .text-primary {
@@ -96,25 +99,6 @@ hr {
   color: #343a40;
 }
 
-.skill-logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.logo-card {
-  width: 50%;
-  text-align: center;
-}
-
-.logo-card .logo-title {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
 .nav-container {
   background: #17a2b8;
   height: 8vh;
@@ -123,17 +107,33 @@ hr {
   top: 0;
 }
 
+@media screen and (min-width: 600px) {
+  .nav-container {
+    grid-area: nav;
+    height: 100vh;
+    max-width: 20vw;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
 .nav-container menu {
   background: #17a2b8;
   height: 0;
   overflow: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-container menu.show-menu {
   padding-top: 15px;
   height: 200px;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-container menu {
+    height: auto;
+  }
 }
 
 .nav-container .nav-ul {
@@ -159,13 +159,18 @@ hr {
 }
 
 .header-container {
+  grid-area: header;
   height: 100vh;
-  padding: 10px;
   text-align: center;
-}
-
-.header-container .title {
-  padding: 50% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-container h1 {
@@ -178,6 +183,10 @@ hr {
 
 .header-container span {
   color: #17a2b8;
+}
+
+.main-container {
+  grid-area: main;
 }
 
 .section-container {
@@ -225,6 +234,16 @@ hr {
 @media screen and (min-width: 500px) {
   .section-container h2 {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 8fr;
+        grid-template-columns: 2fr 8fr;
+        grid-template-areas: "header header" "nav main";
   }
 }
 /*# sourceMappingURL=styles2.css.map */

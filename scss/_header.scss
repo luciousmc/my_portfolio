@@ -1,0 +1,18 @@
+.header-container {
+  grid-area: header;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  span {
+    color: $primary;
+  }
+}

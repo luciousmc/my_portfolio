@@ -1,109 +1,19 @@
 @import "colors.scss";
 @import "globals.scss";
-@import "utility.scss";
 @import "svg.scss";
+@import "utility.scss";
+@import "nav_menu.scss";
+@import "header.scss";
+@import "main.scss";
 
-
-.nav-container {
-  background: $primary;
-  height: 8vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-
-    menu {
-      // margin-top: 20px;
-      background: $primary;
-      height: 0;
-      overflow: hidden;
-      transition: .5s;
-
-      &.show-menu {
-        padding-top: 15px;
-        height: 200px;
-      }
-    }
-    .nav-ul {
-      margin: 0;
-      padding: 0 15px 20px 15px;
-      font-size: 1.2rem;
-
-      li {
-        list-style-type: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 7px 0;
-
-        a {
-          color: $primary-dk;
-          text-decoration: none;
-
-          &:hover {
-            color: $primary-lt;
-          }
-        }
-
-      }
-    }
-}
-
-.header-container {
-  height: 100vh;
-  padding: 10px;
-  text-align: center;
-
-  .title {
-    padding: 50% 0;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 1.5em;
-  }
-  span {
-    color: $primary;
-  }
-}
-
-.section-container {
-  min-height: 100vh;
-  padding: 15px;
-
-  &#projects {
-  text-align: center;
-  }
-
-  .project-item {
-    margin-bottom: 5rem;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  h3 {
-    margin-bottom: 0;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .project-links {
-    display: block;
-    margin-bottom: 1rem;
-  }
-  .project-links a {
-    color: $primary;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-      color: black;
-    }
-  }
-  @media screen and (min-width: 500px) {
-    h2 {
-      text-align: left;
+#wrapper {
+  @media screen and (min-width: $break-mobile-size) {
+    & {
+      display: grid;
+      grid-template-columns: 2fr 8fr;
+      grid-template-areas:
+        "header header"
+        "nav main";
     }
   }
 }
