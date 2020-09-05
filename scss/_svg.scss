@@ -1,3 +1,16 @@
+#scroll-down {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 2%;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 3px solid gray;
+  color: gray;
+}
 #to-top {
   position: fixed;
   width: 50px;

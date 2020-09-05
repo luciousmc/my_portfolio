@@ -1,8 +1,10 @@
-// SHOW HIDE MENU ON MOBILE
 const navBar = document.querySelector(".nav-container");
 const menu = document.getElementById("menu");
+const aboutSection = document.getElementById("about");
 const toTopEl = document.getElementById("to-top");
+const scrollDownEl = document.getElementById("scroll-down");
 
+// SHOW HIDE MENU ON MOBILE
 navBar.addEventListener("click", function (event) {
   if (event.target.classList.contains("nav-toggle")) {
     menu.classList.toggle("show-menu");
@@ -45,13 +47,23 @@ menu.addEventListener("click", function (event) {
 
 // Back to top icon
 window.addEventListener("scroll", () => {
-  const about = document.getElementById("about");
-  const { top } = getScrollPos(about);
-  if (window.pageYOffset > top) {
+  const { top } = getScrollPos(aboutSection);
+  if (window.pageYOffset >= top) {
     toTopEl.style.display = "flex";
+    scrollDownEl.style.display = "none";
   } else {
     toTopEl.style.display = "none";
+    scrollDownEl.style.display = "flex";
   }
+});
+
+scrollDownEl.addEventListener("click", () => {
+  const { top } = getScrollPos(aboutSection);
+  window.scroll({
+    top,
+    left: 0,
+    behavior: "smooth",
+  });
 });
 
 toTopEl.addEventListener("click", () => {
