@@ -30,15 +30,17 @@ hr {
 }
 
 .skill-logo-container {
+  max-width: 60rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
 .logo-card {
-  width: 50%;
   text-align: center;
 }
 

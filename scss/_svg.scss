@@ -1,9 +1,11 @@
 .skill-logo-container {
+  max-width: 60rem;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 1.2rem;
 }
 .logo-card {
-  width: 50%;
   text-align: center;
 
   .logo-title {
@@ -12,4 +14,3 @@
     font-size: 1.5rem;
   }
 }
-
