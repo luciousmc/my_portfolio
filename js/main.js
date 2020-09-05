@@ -1,6 +1,7 @@
 // SHOW HIDE MENU ON MOBILE
 const navBar = document.querySelector(".nav-container");
 const menu = document.getElementById("menu");
+const toTopEl = document.getElementById("to-top");
 
 navBar.addEventListener("click", function (event) {
   if (event.target.classList.contains("nav-toggle")) {
@@ -37,6 +38,25 @@ menu.addEventListener("click", function (event) {
 
   window.scroll({
     top,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+// Back to top icon
+window.addEventListener("scroll", () => {
+  const about = document.getElementById("about");
+  const { top } = getScrollPos(about);
+  if (window.pageYOffset > top) {
+    toTopEl.style.display = "flex";
+  } else {
+    toTopEl.style.display = "none";
+  }
+});
+
+toTopEl.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
     left: 0,
     behavior: "smooth",
   });
