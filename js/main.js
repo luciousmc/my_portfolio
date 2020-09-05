@@ -10,8 +10,8 @@ navBar.addEventListener("click", function (event) {
 
 // SMOOTH SCROLLING
 function getScrollPos(element) {
-  let xPos = 0,
-    yPos = 0;
+  let xPos = 0;
+  let yPos = 0;
 
   xPos += element.offsetLeft - element.scrollLeft + element.clientLeft;
   yPos += element.offsetTop - element.scrollTop + element.clientTop;
@@ -24,13 +24,13 @@ function getScrollPos(element) {
 
 menu.addEventListener("click", function (event) {
   event.preventDefault();
-  const hash = event.target.hash;
-  const scrollTarget = document.querySelector(hash);
+  const hash = event.target.hash.replace("#", "");
+  const scrollTarget = document.getElementById(hash);
   const { top: scrollTop } = getScrollPos(scrollTarget);
   let top;
 
-  if (window.getComputedStyle(navBar).display === "none") {
-    top = navBar.offsetHeight;
+  if (window.screen.width > 750) {
+    top = scrollTop;
   } else {
     top = scrollTop - navBar.offsetHeight;
   }

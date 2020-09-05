@@ -60,7 +60,7 @@ hr {
   cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .btn-container {
     display: none;
   }
@@ -107,7 +107,7 @@ hr {
   top: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .nav-container {
     grid-area: nav;
     height: 100vh;
@@ -130,7 +130,7 @@ hr {
   height: 200px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .nav-container menu {
     height: auto;
   }
@@ -237,7 +237,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   #wrapper {
     display: -ms-grid;
     display: grid;
