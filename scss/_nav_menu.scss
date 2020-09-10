@@ -9,7 +9,7 @@
     & {
       grid-area: nav;
       height: 100vh;
-      max-width: 20vw;
+      max-width: 18vw;
       position: sticky;
     }
   }
@@ -22,23 +22,28 @@
     transition: 0.5s;
 
     &.show-menu {
-      padding-top: 15px;
+      padding-bottom: 1rem;
       height: 200px;
     }
 
     & figure {
-      width: 80%;
-      border: 3px solid var(--primary);
-      border-radius: 9999px;
+      margin: 2rem auto;
 
-      &.profile-img {
-        max-width: 100%;
+      & .profile-img {
+        max-width: 12rem;
+        max-height: 12rem;
+        border: 5px solid $primary-dk;
+        border-radius: 9999px;
       }
     }
-
+    @media screen and (max-width: $break-mobile-size) {
+      .profile-img {
+        display: none;
+      }
+    }
     @media screen and (min-width: $break-mobile-size) {
       & {
-        height: auto;
+        height: 100%;
       }
     }
   }

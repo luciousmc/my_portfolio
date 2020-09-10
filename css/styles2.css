@@ -170,6 +170,16 @@ hr {
   height: 200px;
 }
 
+.nav-container menu figure {
+  width: 80%;
+  border: 3px solid #117a8b;
+  border-radius: 9999px;
+}
+
+.nav-container menu figure .profile-img {
+  width: 100%;
+}
+
 @media screen and (min-width: 750px) {
   .nav-container menu {
     height: auto;
