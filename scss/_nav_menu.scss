@@ -26,6 +26,16 @@
       height: 200px;
     }
 
+    & figure {
+      width: 80%;
+      border: 3px solid var(--primary);
+      border-radius: 9999px;
+
+      &.profile-img {
+        max-width: 100%;
+      }
+    }
+
     @media screen and (min-width: $break-mobile-size) {
       & {
         height: auto;

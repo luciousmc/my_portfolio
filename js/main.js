@@ -58,12 +58,10 @@ window.addEventListener("scroll", () => {
 });
 
 scrollDownEl.addEventListener("click", () => {
-  const { top } = getScrollPos(aboutSection);
+  let { top } = getScrollPos(aboutSection);
 
-  if (window.screen.width > 750) {
-    top = scrollTop;
-  } else {
-    top = scrollTop - navBar.offsetHeight;
+  if (window.screen.width < 750) {
+    top -= navBar.offsetHeight;
   }
 
   window.scroll({
