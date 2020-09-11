@@ -30,7 +30,6 @@ function getScrollPos(element) {
 
 menu.addEventListener("click", function (event) {
   event.preventDefault();
-  console.log(event.target.parentNode.hash);
   const hash = event.target.hash || event.target.parentNode.hash;
   const scrollTarget = document.getElementById(hash.replace("#", ""));
   const { top: scrollTop } = getScrollPos(scrollTarget);
