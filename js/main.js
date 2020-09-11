@@ -6,7 +6,10 @@ const scrollDownEl = document.getElementById("scroll-down");
 
 // SHOW HIDE MENU ON MOBILE
 navBar.addEventListener("click", function (event) {
-  if (event.target.classList.contains("nav-toggle")) {
+  if (
+    event.target.classList.contains("nav-toggle") &&
+    window.screen.width < 750
+  ) {
     menu.classList.toggle("show-menu");
   }
 });
