@@ -47,6 +47,7 @@ hr {
   border-radius: 9999px;
   border: 3px solid gray;
   color: gray;
+  cursor: pointer;
 }
 
 #to-top {
@@ -65,6 +66,7 @@ hr {
   border-radius: 9999px;
   border: 3px solid gray;
   color: gray;
+  cursor: pointer;
 }
 
 .skill-logo-container {
@@ -163,6 +165,7 @@ hr {
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  text-align: center;
 }
 
 .nav-container menu.show-menu {
@@ -177,6 +180,7 @@ hr {
 .nav-container menu figure .profile-img {
   max-width: 12rem;
   max-height: 12rem;
+  width: 80%;
   border: 5px solid #093e47;
   border-radius: 9999px;
 }
@@ -190,6 +194,19 @@ hr {
 @media screen and (min-width: 750px) {
   .nav-container menu {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
