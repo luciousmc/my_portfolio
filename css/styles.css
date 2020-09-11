@@ -29,7 +29,8 @@ hr {
   padding: 15px;
 }
 
-#scroll-down {
+#scroll-down,
+#to-top {
   position: fixed;
   width: 50px;
   height: 50px;
@@ -50,23 +51,14 @@ hr {
   cursor: pointer;
 }
 
+#scroll-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #to-top {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  right: 2%;
-  bottom: 2%;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 9999px;
-  border: 3px solid gray;
-  color: gray;
-  cursor: pointer;
 }
 
 .skill-logo-container {
