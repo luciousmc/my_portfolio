@@ -29,16 +29,56 @@ hr {
   padding: 15px;
 }
 
+#scroll-down {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 2%;
+  bottom: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9999px;
+  border: 3px solid gray;
+  color: gray;
+}
+
+#to-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 2%;
+  bottom: 2%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9999px;
+  border: 3px solid gray;
+  color: gray;
+}
+
 .skill-logo-container {
+  max-width: 60rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
 .logo-card {
-  width: 50%;
   text-align: center;
 }
 
@@ -60,7 +100,7 @@ hr {
   cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .btn-container {
     display: none;
   }
@@ -107,7 +147,7 @@ hr {
   top: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .nav-container {
     grid-area: nav;
     height: 100vh;
@@ -130,7 +170,17 @@ hr {
   height: 200px;
 }
 
-@media screen and (min-width: 600px) {
+.nav-container menu figure {
+  width: 80%;
+  border: 3px solid #117a8b;
+  border-radius: 9999px;
+}
+
+.nav-container menu figure .profile-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
   .nav-container menu {
     height: auto;
   }
@@ -208,7 +258,7 @@ hr {
 }
 
 .section-container h3 {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .section-container img {
@@ -237,7 +287,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   #wrapper {
     display: -ms-grid;
     display: grid;

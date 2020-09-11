@@ -1,9 +1,34 @@
+#scroll-down,
+#to-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 2%;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 3px solid gray;
+  color: gray;
+  cursor: pointer;
+}
+
+#scroll-down {
+  display: flex;
+}
+#to-top {
+  display: none;
+}
+
 .skill-logo-container {
+  max-width: 60rem;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 1.2rem;
 }
 .logo-card {
-  width: 50%;
   text-align: center;
 
   .logo-title {
@@ -12,4 +37,3 @@
     font-size: 1.5rem;
   }
 }
-

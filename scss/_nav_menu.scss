@@ -9,7 +9,7 @@
     & {
       grid-area: nav;
       height: 100vh;
-      max-width: 20vw;
+      max-width: 18vw;
       position: sticky;
     }
   }
@@ -20,15 +20,36 @@
     height: 0;
     overflow: hidden;
     transition: 0.5s;
+    text-align: center;
 
     &.show-menu {
-      padding-top: 15px;
+      padding-bottom: 1rem;
       height: 200px;
     }
 
+    & figure {
+      margin: 2rem auto;
+
+      & .profile-img {
+        max-width: 12rem;
+        max-height: 12rem;
+        width: 80%;
+        border: 5px solid $primary-dk;
+        border-radius: 9999px;
+      }
+    }
+    @media screen and (max-width: $break-mobile-size) {
+      .profile-img {
+        display: none;
+      }
+    }
     @media screen and (min-width: $break-mobile-size) {
       & {
-        height: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
     }
   }
